@@ -4,7 +4,11 @@
     <title>Test page: don't panic!</title>
     <meta charset="utf-8">
     <style>
-    /* GLOBAL STYLES */
+      /* GLOBAL STYLES */
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
       a {
         color: #f00;
       }
@@ -18,7 +22,7 @@
       height: 50vh;
     }
 
-    /* SOCIAL LINKS */
+    /* SOCIAL STYLES */
     .social-link {
       background: rgba(150, 150, 150, 0.5);
       border-radius: 99px;
@@ -44,9 +48,10 @@
     }
     .social-list > li {
       display: inline-block;
+      margin: 0 0.5em;
     }
-    /* BIO STYLES */
 
+      /* BIO STYLES */
       .bio-wrapper {
         font-size: 24px;
         margin: auto;
@@ -55,11 +60,12 @@
       }
       .bio-box {
         border: 1px solid black;
+        border-color: black black red;
         box-sizing: border-box;
         float: left;
         font-size: 1rem;
         margin: 40px 1% 0;
-        padding: 2%;
+        padding: 0 2% 2%;
         width: 23%;
       }
       .bio-box h3 {
@@ -73,12 +79,11 @@
       }
       .bio-copy {
         font-size: 1em;
+        line-height: 1.5;
       }
       .bio-copy a {
         color: green;
       }
-
-
     </style>
   </head>
   <body>
@@ -86,21 +91,20 @@
     <h1>I'm an h1</h1>
     <ul class="social-list">
       <li>
-        <a href="http://example.com"
+        <a href="http://example.com/"
         class="social-link">Fb</a>
       </li>
       <li>
-        <a href="http://example.com"
+        <a href="http://example.com/"
         class="social-link">Tw</a>
       </li>
       <li>
-        <a href="http://example.com"
+        <a href="http://example.com/"
         class="social-link">Gh</a>
       </li>
     </ul>
   </div>
     <h2>I'm an h2</h2>
-
   <div class="bio-wrapper">
     <div class="bio-box">
       <img src="http://placekitten.com/g/400/400">
@@ -113,8 +117,11 @@
           <a href="http://railstutorial.org/">Ruby on Rails
           Tutorial</a> and principal author of the
           <a href="https://learnenough.com/">
-          Learn Enough to Be Dangerous</a> introductory sequence. Michael
-          is also notorious as the founder of
+          Learn Enough to Be Dangerous</a> introductory sequence.
+          </p>
+          
+          <p>
+          Michael is also notorious as the founder of
           <a href="http://tauday.com/">Tau Day</a> and author of
           <a href="http://tauday.com/tau-manifesto"><em>The Tau
           Manifesto</em></a>, but rumors that he's secretly a supervillain
@@ -154,5 +161,32 @@
       </p>
     </div>
   </div>
+  <p>
+      Learn Enough to Be Dangerous is a leader in the movement to teach the
+      world <em>technical sophistication</em>, which includes both "hard
+      skills" like coding, command lines, and version control, and "soft
+       skills" like guessing keyboard shortcuts, Googling error messages, and
+      knowing when to just reboot the darn thing.
+    </p>
+    <p>
+      We believe there are <strong>at least a billion people</strong> who can
+      benefit from learning technical sophistication, probably more. To join
+      our movement,
+      <a href="https://learnenough.com/#email_list">sign up for our official
+      email list</a> now.
+    </p>
+    <h3>Background</h3>
+    <p>
+      Learn Enough to Be Dangerous is an outgrowth of the
+      <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a> and the
+      <a href="http://www.softcover.io/">Softcover publishing platform</a>.
+      This page is part of the sample site for
+      <a href="https://learnenough.com/css-tutorial"><em>Learn Enough CSS and
+      Layout to Be Dangerous</em></a>, which teaches the basics of
+      <strong>C</strong>ascading <strong>S</strong>tyle
+      <strong>S</strong>heets, the language that allows web pages to be styled.
+      Other related tutorials can be found at
+      <a href="https://learnenough.com/">learnenough.com</a>.
+    </p>
   </body>
 </html>
