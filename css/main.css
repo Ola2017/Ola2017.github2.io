@@ -22,6 +22,9 @@ h2 ~ p {
 .header {
     background-color: #000;
     color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
 }
 .header-logo {
     background-color: #000;
@@ -75,6 +78,7 @@ h2 ~ p {
 .full-hero {
   background-color: #c7dbfc;
   height: 50vh;
+  position: relative;
 }            
 .full-hero:hover {
     background-color: #0e59d1;
@@ -99,9 +103,11 @@ h2 ~ p {
               width: 2.5em;
             }
             .social-list {
+              bottom: 50px;
               list-style: none;
               margin: 0 0.5em;
               padding: 0;
+              position: absolute;
               text-align: center;
             }
             .social-list > li {
