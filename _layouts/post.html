@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="post">
-    <div class="helf-hero" style="background-image:url({{ page.postHero}})"></div>
+    <div class="half-hero" style="background-image:url( /images/shark.jpg )"></div> 
 
     <article class="page">
         <header class="post-header">
@@ -24,12 +24,12 @@ layout: default
                         <span>Posted: {{ post.date | date: '%B %d, %Y' }}</span>
                     </li>
                 {% endfor %}
-            </ul> 
+            </ul>
         </aside>
     <div class="post-content">
         {{ content }}
     </div>
-    <footer class="post-content">
+    <footer class="post-footer">
         {{ page.postFooter }}
     </footer>
 </article>
