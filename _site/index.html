@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+       
         <title>Test page: don't panic!</title>
+        
+        
+        <link href="/favicon.png" rel="icon">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:100" rel="stylesheet">
+        <link rel="stylesheet"
+                href="/fonts/fontawesome-free-5.0.10/web-fonts-with-css/css/fontawesome-all.css">
         <link rel="stylesheet" href="/css/reset.css">
         <link rel="stylesheet" href="/css/main.css">
 </head>
@@ -11,7 +18,9 @@
   <body>
     <header class="header">
     <nav>
-        <ul class="header-nav">
+        <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+        <label for="mobile-menu" class="show-mobile-menu">Menu</label>
+        <ul class="header-nav nav-links">
             <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
 <li class="dropdown">
@@ -40,13 +49,19 @@
     <h1>CODE DANGEROUSLY</h1>
     <ul class="social-list">
       <li>
-        <a href="http://example.com/" class="social-link">Fb</a>
+        <a href="http://facebook.com/learnenough" class="social-link">
+          <i class="fab fa-facebook"></i>
+          </a>
       </li>
       <li>
-        <a href="http://example.com/" class="social-link">Tw</a>
+        <a href="http://twitter.com/learnenough" class="social-link">
+        <i class="fab fa-twitter"></i>
+      </a>
       </li>
       <li>
-        <a href="http://example.com/" class="social-link">Gh</a>
+        <a href="http://github.com/learnenough" class="social-link">
+        <i class="fab fa-github"></i>
+      </a>
       </li>
     </ul>
     </div>
